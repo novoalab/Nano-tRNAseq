@@ -46,7 +46,8 @@ For example, if the user selects FLO-MIN106 and direct RNA sequencing kit,
 MinKNOW will match it to sequencing_MIN106_RNA.toml. 
 
 ## MinKNOW versions required/tested 
-The toml files that have been made available were generated for MinKNOW v21.06. 
+The toml files that have been made available were generated
+for MinKNOW version defined in the release information. 
 
 You may need to tweak the `toml` files to make them suitable to your MinKNOW versions. 
 
