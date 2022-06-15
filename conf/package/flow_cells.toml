@@ -1,0 +1,65 @@
+type = "flow_cell_list"
+
+[FLO-FLG001]
+connector = "flongle"
+
+[FLO-FLG111]
+connector = "flongle"
+
+[FLO-FLG112]
+connector = "flongle"
+
+[FLO-FLGOP1]
+connector = "flongle"
+
+[FLO-MIN106]
+connector = "minion_mk1"
+
+[FLO-MIN111]
+connector = "minion_mk1"
+
+[FLO-MIN112]
+connector = "minion_mk1"
+
+[FLO-MIN114]
+connector = "minion_mk1"
+
+[OND-FLO-M106D]
+connector = "minion_mk1"
+
+[FLO-PRO001]
+connector = "promethion"
+
+[FLO-PRO002]
+connector = "promethion"
+
+[FLO-PRO002M]
+connector = "promethion"
+
+[FLO-PRO002-ECO]
+connector = "promethion"
+
+[FLO-PROOP2]
+connector = "promethion"
+
+[FLO-PRO111]
+connector = "promethion"
+
+[FLO-PRO112]
+connector = "promethion"
+
+[FLO-PRO112M]
+connector = "promethion"
+
+[FLO-PRO114]
+connector = "promethion"
+
+[FLO-PRO114M]
+connector = "promethion"
+
+# custom configs
+[FLO-FLG001_short]
+connector = "flongle"
+[FLO-MIN106_short]
+connector = "minion_mk1"
+
