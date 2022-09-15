@@ -15,7 +15,7 @@ import pandas as pd
 import seaborn as sns
 from datetime import datetime
 
-def get_ticks(alnidx, ref2idx, mods):
+def get_ticks(alnidx, ref2idx, mods, adapter5len):
     """Get ticks for the plot"""
     # for old yeast algs add 0,!
     ticks = "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,17a,18,19,20,20a,20b,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,V1,V2,V3,V4,V5,V11,V12,V13,V14,V15,V16,V17,V21,V22,V23,V24,V25,V26,V27,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76"
@@ -24,7 +24,7 @@ def get_ticks(alnidx, ref2idx, mods):
     aligned_mods = [[] for i in range(len(ticks))]
     if "name" in mods.columns:
         for ref, idx in ref2idx.items():
-            pos2idx = {p: i for p, i in enumerate(idx)}
+            pos2idx = {p+adapter5len: i for p, i in enumerate(idx)}
             for i, r in mods[mods.chrom==ref].iterrows():
                 pos, name = r["pos"], r["name"]
                 if pd.isna(name) or name.startswith("oligo"):
@@ -73,7 +73,7 @@ def save_heatmaps(ticks, err_diff, ref2idx, fname, ext, ref2len,
         for axis in (0, 1):
             amods.dropna(axis=axis, how="all", inplace=True)
         # plot
-        fig, ax = plt.subplots(figsize=(25, len(_refs)/4))
+        fig, ax = plt.subplots(figsize=(25, len(_refs)/3)) # for human we use /4
         g = sns.heatmap(amods, ax=ax, cmap=cmap, vmin=-maxv, vmax=maxv)
         ax.tick_params(axis="x", labelrotation=90)
         ax.set_title(title%c)
@@ -98,7 +98,7 @@ def plot_heatmap(fname, fasta, alnfn, maxv, adapter5len=24, adapter3len=30, ext=
     ref2idx = {r: np.array([i for i, b in enumerate(alnidx[r]) if b!="-"])
                for r in alnidx.references if r in faidx}
     # get ticks
-    ticks = get_ticks(alnidx, ref2idx, err_diff)# mods)
+    ticks = get_ticks(alnidx, ref2idx, err_diff, adapter5len)
     # get ref lenths
     ref2len = {r: l - adapter3len - adapter5len
                for r, l in zip(faidx.references, faidx.lengths)}
