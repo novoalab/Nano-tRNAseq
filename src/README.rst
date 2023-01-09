@@ -20,7 +20,7 @@ It's recommended to create virtual environment and use Python version 3.7.
    pip install numpy seaborn pandas mappy pysam
 
 Note, this will install only Python dependencies.
-We assume you have tools such as ``bwa mem`` and ```samtools``
+We assume you have tools such as ``bwa mem`` and ``samtools``
 already installed in your system.
 If not, those can be easily installed with `conda <https://bioconda.github.io/>`_:
 
@@ -112,6 +112,9 @@ between WT and some other sample(s) as follows:
    ~/src/Nano-tRNAseq/src/get_sum_err.py -o heatmap/rep1 -f $ref \
      -i bwamem/{wt,pus4ko,h2o2}.bam
 
+Optionally, you can add modification annotation using
+``-b ~/src/Nano-tRNAseq/ref/yeast.tRNA.modomics.tsv.bed``. 
+     
 Then, the heatmaps can be plotted using:
 
 .. code-block:: bash
