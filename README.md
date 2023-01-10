@@ -1,5 +1,5 @@
+![alt text](./img/Nano-tRNAseq.png "logo")
 
-# Nano-tRNAseq
 Analysis of tRNA abundances and modifications using native RNA nanopore sequencing
 
 This repository contains:
@@ -10,7 +10,7 @@ This repository contains:
 ## Citation
 If you find this work useful, please cite:
 
-Lucas MC*, Pryszcz L*, Medina R, Milenkovic I, Camacho N, Ribas de Pouplana L and Novoa EM.
+Lucas MC*, Pryszcz L*, Medina R, Milenkovic I, Camacho N, Marchand V, Motorin Y, Ribas de Pouplana L and Novoa EM.
 Quantitative anaysis of native tRNA populations using direct RNA nanopore sequencing. 
 
 
