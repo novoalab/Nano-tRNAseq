@@ -12,6 +12,6 @@ This repository contains:
 If you find this work useful, please cite:
 
 Lucas MC*, Pryszcz L*, Medina R, Milenkovic I, Camacho N, Marchand V, Motorin Y, Ribas de Pouplana L and Novoa EM.
-Quantitative anaysis of native tRNA populations using direct RNA nanopore sequencing. 
+Quantitative anaysis of native tRNA populations using direct RNA nanopore sequencing. (AIP - Accepted in principle)
 
 
