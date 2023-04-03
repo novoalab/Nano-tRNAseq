@@ -9,7 +9,7 @@ and our custom (bottom) configuration.
 <img height="200" src="read_detection.png">
 
 
-Here we describe how to set up alternative MinKNOW cofigurations
+Here we describe how to set up alternative MinKNOW configurations
 for enhanced capture of tRNA reads from direct RNA nanopore sequencing runs,
 which are otherwise discarded when using default MinKNOW settings. 
 
