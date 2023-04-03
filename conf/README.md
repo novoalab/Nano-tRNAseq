@@ -3,8 +3,8 @@
 The default MinKNOW configuration is suboptimal in detecting reads
 originating from short molecules such as tRNA.
 We optimised the configuration to capture ~10x more reads from tRNA experiments. 
-Below, you can see the reads (in red) identified by default (top)
-and our custom (bottom) configuration.
+Below, you can see the reads (in red) identified by **default** (top)
+and our **custom** (bottom) configuration.
 
 <img height="200" src="read_detection.png">
 
