@@ -13,6 +13,12 @@ Here we describe how to set up alternative MinKNOW configurations
 for enhanced capture of tRNA reads from direct RNA nanopore sequencing runs,
 which are otherwise discarded when using default MinKNOW settings. 
 
+Note, this tutorial is meant for Linux users and was tested with Ubuntu 20.04 and 22.04.  
+For MacOS, you should replace all MinKNOW paths 
+`/opt/ont/minknow/`
+with 
+`/Applications/MinKNOW.app/Contents/Resources/`
+(see [#3](/../../issues/3)). 
 
 ## Setting up alternative MinKNOW configurations
 To enable those, simply rsync conf files (root priviledges needed):
@@ -90,7 +96,10 @@ q_score_min = 7
 simulation="/path/to/bulk_file.fast5"
 ```
 
-3. and start sequencing simulation using `FLO-MIN106_short` flowcell (alternative cofiguration)
+3. and start sequencing simulation using `FLO-MIN106_short` flowcell (alternative cofiguration).   
+   In order to run simulation, you should connect a MinION device with a flowcell
+   and select this device for sequencing (simulation).
+   You can use a dummy flowcell that was provided with the device (the one you use for hardware testing). 
 
 <img height="200" src="minknow_flowcell.png">
 
