@@ -9,7 +9,7 @@ This repository contains:
 - [src/](/src): source code
 
 ## Multiplexing  Nano-tRNAseq runs
-Yes, it is possible, please take a look [here](https://immaginabiotech.com/nano-trnaseq).
+Yes, it is possible, both for SQK-RNA002 and SQK-RNA004 kits. Please take a look [here](https://immaginabiotech.com/nano-trnaseq).
 
 ## Citation
 If you find this work useful, please cite:
